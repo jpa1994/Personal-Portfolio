@@ -1,0 +1,354 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, "Exo 2";
+    background-color: #495159;
+}
+
+h1,h2,h3,li,p {
+    color: white;
+}
+
+h1,h2,h3 {
+    font-family: "Exo 2" ,Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+h2,h3,p,li {
+    margin-left: 2%;
+}
+
+p {
+    margin-right: 2%;
+}
+
+svg {
+    margin-left: 2%;
+    margin-right: 10px;
+}
+
+.projects p {
+    margin-top: 3px;
+}
+
+@media screen and (max-width:768px){
+    p,li {
+        line-height: 1.75rem;
+    }
+
+    h1,h2,h3,li,p {
+        letter-spacing: 0.3px;
+    }
+}
+
+@media screen and (min-width:2560px){
+    h1 {
+        font-size: 65px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    p,li {
+        font-size: x-large;
+    }
+}
+
+/* ANIMATED SVG LINES */
+
+svg {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: -100;
+    }
+}
+
+/* ANIMATED SVD LINES END */
+
+/* NAVIGATION */
+
+header {
+    background-color: #45546deb;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+}
+
+nav a::after {
+    content: '|';
+}
+
+nav li:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+nav .about:hover {
+    text-decoration-color: #01fdf6;
+    text-decoration-thickness: 5px;
+}
+
+nav .skills:hover {
+    text-decoration-color: #a4f864;
+    text-decoration-thickness: 5px;
+}
+
+nav .projects:hover {
+    text-decoration-color: #fc814a;
+    text-decoration-thickness: 5px;
+}
+
+nav .contact:hover {
+    text-decoration-color: #f2807e;
+    text-decoration-thickness: 5px;
+}
+
+@media screen and (max-width:656px){
+
+    nav a::after {
+        content: '';
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+    }
+}
+
+/* MOBILE NAV */
+
+#mobileMenu {
+    background-color: #45546deb;
+}
+
+/* MAIN */
+
+main img {
+    position: relative;
+    top: 10px;
+    border-radius: 50%;
+    background: rgb(0,255,250);
+    background: linear-gradient(144deg, rgba(0, 255, 251, 0.233) 23%, rgba(253,187,45,0.5170400924041492) 74%); 
+    animation-name: picture;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+@keyframes picture {
+    0% {top: -900%;}
+    100% {top: 10px}
+}
+
+main h1 {
+    position: relative;
+    top: 10px;
+    border-radius: 70%;
+    animation-name: name;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+@keyframes name {
+    0% {left: -900%;}
+    100% {left: 0}
+}
+
+/* ABOUT ME */
+
+
+.aboutMe h2::after {
+    content: ""; /* Necessary for the pseudo element to work. */ 
+    display: block; /* Puts the pseudo element on its own line. */
+    margin: 0;
+    width: 50%;
+    padding-top: 0.1rem; 
+    border-bottom: 3px solid #01fdf6;
+    border-width: 6px;
+}
+
+.aboutMe {
+    color: whitesmoke;
+}
+
+#aboutMe { 
+    scroll-margin-top: 80px;
+}
+
+@media screen and (max-width:768px){
+    #aboutMe { 
+        scroll-margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    #aboutMe { 
+        scroll-margin-top: 350px;
+    }
+}
+
+
+/* SKILLS */
+
+.skills h2::after {
+    content: ""; /* Necessary for the pseudo element to work. */ 
+    display: block; /* Puts the pseudo element on its own line. */
+    margin: 0;
+    width: 50%;
+    padding-top: 0.1rem; 
+    border-bottom: 3px solid #a4f864;
+    border-width: 6px;
+}
+
+.skills li::marker {
+    color: #d1f8b4;
+}
+
+#skills { 
+    scroll-margin-top: 80px;
+}
+
+@media screen and (max-width:768px){
+    #skills { 
+        scroll-margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    #skills { 
+        scroll-margin-top: 350px;
+    }
+}
+
+.skills ul {
+    color: whitesmoke;
+}
+
+/* PROJECTS */
+
+.projects h2::after {
+    content: ""; /* Necessary for the pseudo element to work. */ 
+    display: block; /* Puts the pseudo element on its own line. */
+    margin: 0;
+    width: 50%;
+    padding-top: 0.1rem; 
+    border-bottom: 3px solid #fc814a;
+    border-width: 6px;
+}
+
+.projects .detroix {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 1% 100%;
+}
+
+.projects .bloom {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 1% 100%;
+}
+
+.projects .business {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 1% 100%;
+}
+
+#projects { 
+    scroll-margin-top: 76px;
+}
+
+@media screen and (max-width:768px){
+    #projects { 
+        scroll-margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    #projects { 
+        scroll-margin-top: 350px;
+    }
+}
+
+/* CONTACT */
+
+.contact h2::after {
+    content: ""; /* Necessary for the pseudo element to work. */ 
+    display: block; /* Puts the pseudo element on its own line. */
+    margin: 0;
+    width: 50%;
+    padding-top: 0.1rem; 
+    border-bottom: 3px solid #f48786;
+    border-width: 6px;
+}
+
+.contact li::marker {
+    color: #f1b9b8;
+}
+
+#contact { 
+    scroll-margin-top: 76px;
+}
+
+@media screen and (max-width:768px){
+    #contact { 
+        scroll-margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    #contact { 
+        scroll-margin-top: 350px;
+    }
+}
+
+.contact ul {
+    color: whitesmoke;
+}
+
+/* FOOTER */
+
+.linkedIn {
+    filter: invert(64%) sepia(34%) saturate(6026%) hue-rotate(205deg) brightness(101%) contrast(104%);
+}
+
+.linkedIn:hover {
+    filter: invert(44%) sepia(81%) saturate(4389%) hue-rotate(227deg) brightness(98%) contrast(107%);
+}
+
+.gitHub {
+    filter: invert(82%) sepia(57%) saturate(4573%) hue-rotate(211deg) brightness(104%) contrast(103%);
+}
+
+.gitHub:hover {
+    filter: invert(57%) sepia(97%) saturate(3579%) hue-rotate(235deg) brightness(101%) contrast(100%);
+}

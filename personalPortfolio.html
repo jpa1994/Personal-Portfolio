@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header class="container-fluid sticky-top pt-4 pb-2" id="navbar" role="header">
+        <nav class="row" role="navigation">
+            <div class="col-12 text-center">
+                <ul class="d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+                    <a href="#aboutMe">
+                        <li class="about mb-3">About Me</li>
+                    </a>
+                    <a href="#skills">
+                        <li class="skills">Skills</li>
+                    </a>
+                    <a href="#projects">
+                        <li class="projects">Projects</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="contact">Contact</li>
+                    </a>
+                </ul>
+            </div>
+
+        <!-- HAMBURGER MENU -->
+
+            <div class="collapse " id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="p-4 text-center">
+                    <ul class="text-body-emphasis h4 justify-content-around d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
+                        <a href="#aboutMe">
+                            <li class="about fs-2">About Me</li>
+                        </a>
+                        <a href="#skills">
+                            <li class="skills fs-2">Skills</li>
+                        </a>
+                        <a href="#projects">
+                            <li class="projects fs-2">Projects</li>
+                        </a>
+                        <a href="#contact">
+                            <li class="contact fs-2">Contact</li>
+                        </a>
+                    </ul>
+                </div>
+              </div>
+              <nav class="navbar d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
+        </nav>
+
+        <!-- HAMBURGER MENU END -->
+        
+    </header>
+
+    <main class="container-fluid banner" role="banner main">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="./Images/PNG_image-removebg-preview.png" class="img-fluid" width="280px alt="picture of John Astvazaturov">
+                <h1 class="pt-3 pb-4">John Astvazaturov</h1>
+            </div>
+        </div>
+    </main>
+
+    <section class="container-fluid aboutMe pt-3" role="About Me">
+        <div class="row" id="aboutMe">
+            <div class="col-12">
+                <h2>About Me</h2>
+
+                <svg height="21" width="50%" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="10" x2="100%" y2="10" style="stroke:#a5faf7;stroke-width:6" />
+                </svg> 
+
+                <p class="pt-0">Born and raised in Long Beach, MS. After flunking college for various reasons, I have been living with and taking care of my mother. I wanted to start seeking getting an education again to gain a new skill to use and learn.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid  skills pt-3" role="Skills">
+        <div class="row" id="skills">
+            <div class="col-12">
+                <h2>Skills</h2>
+
+                <svg height="21" width="50%" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="10" x2="100%" y2="10" style="stroke:#c7f5a3;stroke-width:6" />
+                </svg>
+                
+                <ul class="pt-0">
+                    <li>Currently enrolled in Mississippi Coding Acadamies learning front-end coding</li>
+                    <li>Profiecent in HTML, CSS, and Bootstrap</li>
+                    <li>MS Word, Excel, Powerpoint</li>
+                    <li>Avid Learner</li>
+                    <li>Good Listening Skills</li>
+                    <li>Caregiver for elderly parent</li>
+                    <li>Some college from University of Southern Mississippi</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid projects pt-3" role="Projects">
+        <div class="row" id="projects">
+            <div class="col-12">
+                <h2>Projects</h2>
+
+                <svg height="21" width="50%" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="10" x2="100%" y2="10" style="stroke:#f8bea4;stroke-width:6" />
+                </svg>
+
+            </div>
+            <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center pt-3">
+                <h3>Detroix</h3>
+                <a href="https://github.com/jpa1994/Detroix-Bootstrap-Website-Template"><img src="./Images/detroix_github.png" class="img-fluid detroix" alt="Detroix webpage, gray header,blue background with 'THINK BIG' in big letters"></a>
+                <p class="text-center">Replicating a Detroix webpage template in Bootstrap, CSS, and HTML.</p>
+            </div>
+            <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center pt-3">
+                <h3>Bloom</h3>
+                <a href="https://github.com/jpa1994/Bloom-Landing-Page-Bootstrap"><img src="./Images/Bloom_Landing_Page.png" class="img-fluid bloom" alt="Bloom Landing Page, dark gray header, pink background with white text"></a>
+                <p class="text-center">Replicating a Bloom webpage tempmlate in Bootstrap, CSS, and HTML.</p>
+            </div>
+            <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center pt-3">
+                <h3>Corporate</h3>
+                <a href="https://github.com/jpa1994/Corporate-Template"><img src="./Images/corporate_link.png" class="img-fluid business" alt="blue background with dark circle logo"></a>
+                <p class="text-center">Replicating a Business webpage template in Bootstrap, CSS, and HTML.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid contact pt-3" role="Contact">
+        <div class="row" id="contact">
+            <div class="col-12">
+                <h2>Contact</h2>
+
+                <svg height="21" width="50%" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="10" x2="100%" y2="10" style="stroke:#efb3b2;stroke-width:6" />
+                </svg>             
+
+                <ul>
+                    <li>Name: John Astvazaturov</li>
+                    <li>Phone: xxx-xxx-xxxx</li>
+                    <li>Email: john.astvazaturov@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid" role="footer">
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="https://www.linkedin.com/in/john-astvazaturov-705a6635a/"> <img src="./Images/linkedin-brands.svg" class="img-fluid linkedIn pe-2" width="70px" alt="LinkedIn"></a>
+                <a href="https://github.com/jpa1994"><img src="./Images/square-github-brands.svg" class="img-fluid gitHub ps-2" width="70px" alt="GitHub"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
